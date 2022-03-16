@@ -1,22 +1,30 @@
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
-    <div class="container-fluid">
-      <label >Name</label>
-      <input type="text" name="name"/><br/>
-      <label>Email</label>
-      <input type="text" name="email"/><br/>
-      <label>Mobile Numeber</label>
-      <input type="number" name="number"/><br/>
+    <form action='/register'>
+      <div class="form-group">
+        <label for="name">Email address:</label>
+        <input type="text" class="form-control" id="name" />
+      </div>
 
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email" />
+      </div>
+
+      <div class="form-group">
+        <label for="number">Password:</label>
+        <input type="number" class="form-control" id="number" />
+      </div>
       <div class="password-container">
 
       </div>
 
-      <input type="submit" class="btn-primary"/>
-
-    </div>
+      <button type="submit" class="btn btn-default">
+        Submit
+      </button>
+    </form>
   );
 }
 
